@@ -1,0 +1,5 @@
+.bodyContainer{
+    width: calc(100% - 210px);
+    position: relative;
+    overflow-y: scroll;
+}

@@ -1,0 +1,56 @@
+.container {
+  width: 210px;
+  height: 100%;
+  background: #fff;
+  border-right: 1px solid rgb(240, 240, 240);
+}
+.logo {
+  display: flex;
+  justify-content: center;
+  padding-top: 20px;
+}
+.logo img {
+  width: 130px;
+}
+.menuLinksContainer {
+  margin-top: 25px;
+}
+.menuLinks {
+  display: flex;
+  align-items: center;
+  padding: 11px 0;
+  position: relative;
+  cursor: pointer;
+}
+.menuLinks:hover{
+    background: rgb(249, 249, 249); 
+}
+.menuLinks.active {
+  background: rgb(240, 240, 240);
+}
+.menuLinks.active::after {
+  content: "";
+  position: absolute;
+  height: 100%;
+  top: 0;
+  left: 0;
+  width: 7px;
+  background: #377dff;
+}
+.menuLinks.active .icon {
+  color: #377dffd6;
+}
+.menuLinks.active p {
+  color: #202020;
+}
+.icon {
+  margin-left: 50px;
+  color: rgb(195, 195, 195);
+  width: 20px !important;
+}
+.menuLinks p {
+  margin-left: 10px;
+  color: rgb(138, 138, 138);
+  font-size: 12px;
+  font-weight: 400;
+}
