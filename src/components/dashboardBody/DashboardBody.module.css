@@ -3,3 +3,8 @@
     position: relative;
     overflow-y: scroll;
 }
+@media(max-width: 1000px){
+    .bodyContainer{
+        width: 100%;
+    }
+}

@@ -4,6 +4,9 @@
   background: #fff;
   border-right: 1px solid rgb(240, 240, 240);
 }
+.btn{
+   display: none;
+}
 .logo {
   display: flex;
   justify-content: center;
@@ -53,4 +56,29 @@
   color: rgb(138, 138, 138);
   font-size: 12px;
   font-weight: 400;
+}
+
+@media(max-width: 1000px){
+    .container{
+        position: absolute;
+        z-index: 300;
+        left: -800px;
+    }
+    .btn{
+        all: unset;
+        cursor: pointer;
+        position: absolute;
+        right: 20px;
+        margin-top: 20px;
+        -webkit-tap-highlight-color: rgba(0,0,0,0);
+    }
+    .logo{
+        display: none;
+    }
+    .container.active{
+        left: 0;
+    } 
+    .menuLinksContainer {
+        margin-top: 60px;
+      }
 }

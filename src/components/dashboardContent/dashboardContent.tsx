@@ -1,5 +1,7 @@
 import React, { useEffect, useState } from 'react'
 import JobCard from '../jobCard/jobCard'
+import RecruitmentProcess from '../recruitmentProcess/recruitmentProcess'
+import Refer from '../refer/refer'
 import styles from './DashboardContent.module.css'
 
 interface Props {
@@ -30,10 +32,8 @@ const DashboardContent:React.FC<Props> = ({name}) => {
                 <JobCard />
             </div>
             <div className={styles.recruitment}>
-                <div className={styles.process}>
-                    <h3>Our Recruitment Process</h3>
-                </div>
-                
+                <RecruitmentProcess />
+                <Refer />   
             </div>
         </div>
     </div>

@@ -1,5 +1,5 @@
 .contentContainer{
-    padding: 90px 30px 0 40px;
+    padding: 90px 30px 40px 40px;
 }
 .welcomeText{
     font-size: 28px;
@@ -52,11 +52,29 @@ margin-bottom: 10px;
 .recruitment{
     width: 30%;
 }
-.process{
-background: #fff;
-border-radius: 7px;
-padding: 20px 20px 10px;
+
+@media(max-width: 1040px){
+    .assessmentAndJobs{
+        width: 60%;
+    }
+    .recruitment{
+        width: 35%;
+    }
 }
-.process h3{
-    font-size: 16px;
+@media(max-width:700px){
+    .jobsAndRecruitment{
+        display: block;
+    }
+    .assessmentAndJobs{
+        width: 100%;
+    }
+    .recruitment{
+        width: 100%;
+        margin-top: 100px;
+    }
+}
+@media(max-width:460px){
+    .assessment div{
+        width: 80%;
+    }
 }

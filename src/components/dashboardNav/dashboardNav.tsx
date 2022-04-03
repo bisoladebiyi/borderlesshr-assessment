@@ -1,18 +1,28 @@
 import { Avatar } from "@mui/material";
-import React from "react";
+import React, { useContext } from "react";
 import styles from "./DashboardNav.module.css";
 import SearchRoundedIcon from "@mui/icons-material/SearchRounded";
 import NotificationsRoundedIcon from "@mui/icons-material/NotificationsRounded";
+import MenuRoundedIcon from '@mui/icons-material/MenuRounded';
 import { UserDataType } from "../../types";
 
+
 interface Props {
-    userData: UserDataType
+    userData: UserDataType;
+    toggle: ()=>void
 }
 
-const DashboardNav:React.FC<Props> = ({ userData }) => {
+const DashboardNav:React.FC<Props> = ({ userData, toggle }) => {
   return (
     <div className={styles.navContainer}>
       <div className={styles.nav}>
+          <div className={styles.logo}>
+              <button  className={styles.menu} onClick={toggle}>
+              <MenuRoundedIcon />
+              </button>
+            
+              <img src="https://blog.borderlesshr.com/wp-content/themes/networker/img/logo.svg" alt="" />
+          </div>
         <div className={styles.inputContainer}>
           <input type="text" placeholder="Search ..." />
           <SearchRoundedIcon className={styles.searchIcon} />

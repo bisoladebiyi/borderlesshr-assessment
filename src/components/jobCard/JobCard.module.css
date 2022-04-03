@@ -61,3 +61,27 @@ margin-left: 5px;
     font-size: 11px;
     color: #828282;
 }
+
+@media(max-width: 1040px){
+    .jobInfo {
+
+        width: 80%;
+    }
+}
+@media(max-width:780px){
+    .jobInfo {
+
+        width: 100%;
+    }
+}
+@media(max-width:700px){
+    .jobInfo {
+
+        width: 80%;
+    }
+}
+@media(max-width:450px){
+    .jobInfo {
+        width: 100%;
+    }
+}

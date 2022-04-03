@@ -6,10 +6,18 @@ import SettingsOutlinedIcon from "@mui/icons-material/SettingsOutlined";
 import ContactSupportOutlinedIcon from "@mui/icons-material/ContactSupportOutlined";
 import AssessmentOutlinedIcon from '@mui/icons-material/AssessmentOutlined';
 import GridViewOutlinedIcon from '@mui/icons-material/GridViewOutlined';
+import CloseRoundedIcon from '@mui/icons-material/CloseRounded';
 
-const SideMenu = () => {
+interface Props{
+    toggle:() => void;
+    menu:string
+}
+const SideMenu:React.FC<Props> = ({toggle, menu}) => {
   return (
-    <div className={styles.container}>
+    <div className={`${styles.container} ${styles[menu]}`}>
+        <button className={styles.btn} onClick={toggle}>
+<CloseRoundedIcon />
+        </button>
       <div className={styles.logo}>
         <img
           src="https://blog.borderlesshr.com/wp-content/themes/networker/img/logo.svg"

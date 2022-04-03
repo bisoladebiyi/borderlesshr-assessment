@@ -2,6 +2,7 @@
     width: inherit;
     background: #fff;
     position: fixed;
+    z-index: 30;
 }
 .nav{
     padding: 10px 30px 10px 40px;
@@ -10,6 +11,19 @@
     align-items: center;
  
 }
+.logo{
+   align-items: center;
+   display: none;
+}
+.logo .menu{
+    all: unset;
+cursor: pointer;
+-webkit-tap-highlight-color: rgba(0,0,0,0);
+}
+.logo  img{
+    width: 100px;
+    margin-left: 20px;
+}
 .inputContainer{
     width: 250px;
     position: relative;
@@ -17,12 +31,12 @@
 .inputContainer input{
     width: 100%;
     padding: 10px 8px 10px 35px;
-    border: 1px solid rgb(230, 230, 230);
+    border: 1px solid rgb(194, 194, 194);
     border-radius: 4px;
     outline: none;
 }
 .inputContainer input::placeholder{
-    color: rgb(214, 214, 214);
+    color: rgb(189, 189, 189);
     font-weight: 400;
     font-size: 13px;
 }
@@ -31,7 +45,7 @@ position: absolute;
 left: 12px;
 top: 50%;
 transform: translateY(-50%);
-color: rgb(214, 214, 214);
+color: rgb(188, 188, 188);
 width: 17px !important;
 }
 .userInfo{
@@ -48,7 +62,7 @@ width: 17px !important;
 }
 .userInfo div p:last-child{
 font-size: 12px;
-color: rgb(195, 195, 195);
+color: #828282;
 }
 .notifIcon{
     position: relative;
@@ -71,3 +85,84 @@ color: rgb(195, 195, 195);
 .avatar{
     background: #fcbf49 !important;
 } 
+
+
+@media(max-width:1000px){
+    .logo{
+        display: flex;
+     }
+}
+@media(max-width:780px){
+    .nav{
+        padding: 10px 20px;
+     
+    }
+    .inputContainer{
+        width: 200px;
+        position: relative;
+    }
+    .inputContainer input{
+        padding: 8px 8px 8px 35px;
+    }
+    .userInfo div:nth-child(2) {
+        margin-right: 25px;
+    }
+    .userInfo div p:first-child{
+        font-size: 13px;
+    }
+    .userInfo div p:last-child{
+    font-size: 11px;
+    }
+    .notifIcon{
+        margin-right: 25px;
+    }
+    .notifIcon::after{
+        width: 13px;
+        height: 13px;
+        top: -3px;
+        right: 0px;
+      
+    }
+    .avatar{
+       transform: scale(0.8);
+    } 
+}
+@media(max-width:700px){
+    .inputContainer{
+        display: none;
+    }
+}
+@media(max-width:480px){
+    .nav{
+        padding: 10px 15px;
+     
+    }
+    .logo  img{
+        width: 90px;
+        margin-left: 10px;
+    }
+    .notifIcon{
+        margin-right: 18px;
+    }
+    .notifIcon::after{
+        width: 13px;
+        height: 13px;
+        top: -3px;
+        right: 0px;
+      
+    }
+    .userInfo div:nth-child(2) {
+        margin-right: 18px;
+    }
+    .avatar{
+       transform: scale(0.7);
+    } 
+}
+@media(max-width:390px){
+    .notifIcon{
+        margin-right: 10px;
+    }
+    .userInfo div:nth-child(2) {
+        margin-right: 10px;
+    }
+}
