@@ -4,20 +4,27 @@ import FeedOutlinedIcon from "@mui/icons-material/FeedOutlined";
 import PersonOutlineRoundedIcon from "@mui/icons-material/PersonOutlineRounded";
 import SettingsOutlinedIcon from "@mui/icons-material/SettingsOutlined";
 import ContactSupportOutlinedIcon from "@mui/icons-material/ContactSupportOutlined";
-import AssessmentOutlinedIcon from '@mui/icons-material/AssessmentOutlined';
-import GridViewOutlinedIcon from '@mui/icons-material/GridViewOutlined';
-import CloseRoundedIcon from '@mui/icons-material/CloseRounded';
+import AssessmentOutlinedIcon from "@mui/icons-material/AssessmentOutlined";
+import GridViewOutlinedIcon from "@mui/icons-material/GridViewOutlined";
+import LogoutRoundedIcon from "@mui/icons-material/LogoutRounded";
+import CloseRoundedIcon from "@mui/icons-material/CloseRounded";
+import { useNavigate } from "react-router-dom";
 
-interface Props{
-    toggle:() => void;
-    menu:string
+interface Props {
+  toggle: () => void;
+  menu: string;
 }
-const SideMenu:React.FC<Props> = ({toggle, menu}) => {
+const SideMenu: React.FC<Props> = ({ toggle, menu }) => {
+  const navigate = useNavigate();
+  const logout = () => {
+    localStorage.clear();
+    navigate("/login");
+  };
   return (
     <div className={`${styles.container} ${styles[menu]}`}>
-        <button className={styles.btn} onClick={toggle}>
-<CloseRoundedIcon />
-        </button>
+      <button className={styles.btn} onClick={toggle}>
+        <CloseRoundedIcon />
+      </button>
       <div className={styles.logo}>
         <img
           src="https://blog.borderlesshr.com/wp-content/themes/networker/img/logo.svg"
@@ -38,7 +45,7 @@ const SideMenu:React.FC<Props> = ({toggle, menu}) => {
           <AssessmentOutlinedIcon className={styles.icon} />
           <p>Assessment</p>
         </div>
-        
+
         <div className={styles.menuLinks}>
           <PersonOutlineRoundedIcon className={styles.icon} />
           <p>Profile</p>
@@ -51,9 +58,13 @@ const SideMenu:React.FC<Props> = ({toggle, menu}) => {
           <ContactSupportOutlinedIcon className={styles.icon} />
           <p>Help</p>
         </div>
+        <div className={styles.menuLinks} onClick={logout}>
+          <LogoutRoundedIcon className={styles.icon} />
+          <p>Logout</p>
+        </div>
       </div>
     </div>
-  ); 
+  );
 };
 
 export default SideMenu;

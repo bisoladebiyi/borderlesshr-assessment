@@ -1,87 +1,84 @@
-.jobCard{
-    width: 100%;
-    background: #fff;
-    border-radius: 7px;
-    margin-top: 20px;
-    padding: 20px;
-    box-shadow: 0px 1px 2px 1px rgba(221, 221, 221, 0.378);
+.jobCard {
+  width: 100%;
+  background: #fff;
+  border-radius: 7px;
+  margin-top: 20px;
+  padding: 20px;
+  box-shadow: 0px 1px 2px 1px rgba(221, 221, 221, 0.378);
 }
-.jobTitle{
-display: flex;
-justify-content: space-between;
-align-items: center;
+.jobTitle {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
 }
-.jobTitle p{
-    font-size: 14px;
-    font-weight: 500;
+.jobTitle p {
+  font-size: 14px;
+  font-weight: 500;
 }
-.bookmark{
-    color: #377dffd6;
-    transform: scale(0.9);
+.bookmark {
+  color: #377dffd6;
+  transform: scale(0.9);
 }
 .jobInfo {
-    display: flex;
-    justify-content: space-between;
-    width: 50%;
-    margin-top: 5px;
+  display: flex;
+  justify-content: space-between;
+  width: 50%;
+  margin-top: 5px;
 }
 .jobInfo div {
-    display: flex;
-    align-items: center;
+  display: flex;
+  align-items: center;
 }
-.jobInfo div .jobInfoIcon{
-   width: 14px !important;
-    color: #828282;
+.jobInfo div .jobInfoIcon {
+  width: 14px !important;
+  color: #828282;
 }
-.jobInfo div p{
-font-size: 11px;
-color: #828282;
-margin-left: 5px;
+.jobInfo div p {
+  font-size: 11px;
+  color: #828282;
+  margin-left: 5px;
 }
-.description{
-    margin-top: 5px;
-    font-size: 13px;
-    padding-right: 40px;
-    color: #6f6f6f;
-    line-height: 22px;
+.description {
+  margin-top: 5px;
+  font-size: 13px;
+  padding-right: 40px;
+  color: #6f6f6f;
+  line-height: 22px;
 }
-.apply{
-    display: flex;
-    justify-content: space-between;
-    align-items: center;
-    margin-top: 20px;
+.apply {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin-top: 20px;
 }
-.apply a{
-    text-decoration: none;
-    font-size: 13px;
-    color: #377dffd6;
-    font-weight: 500;
+.apply a {
+  text-decoration: none;
+  font-size: 13px;
+  color: #377dffd6;
+  font-weight: 500;
 }
-.apply p{
-    font-size: 11px;
-    color: #828282;
+.apply p {
+  font-size: 11px;
+  color: #828282;
 }
 
-@media(max-width: 1040px){
-    .jobInfo {
-
-        width: 80%;
-    }
+@media (max-width: 1040px) {
+  .jobInfo {
+    width: 80%;
+  }
 }
-@media(max-width:780px){
-    .jobInfo {
-
-        width: 100%;
-    }
+@media (max-width: 780px) {
+  .jobInfo {
+    width: 100%;
+  }
 }
-@media(max-width:700px){
-    .jobInfo {
-
-        width: 80%;
-    }
+@media (max-width: 700px) {
+  .jobInfo {
+    width: 80%;
+  }
 }
-@media(max-width:450px){
-    .jobInfo {
-        width: 100%;
-    }
+@media (max-width: 450px) {
+  .jobInfo {
+    width: 100%;
+  }
 }

@@ -1,80 +1,79 @@
-.contentContainer{
-    padding: 90px 30px 40px 40px;
+.contentContainer {
+  padding: 90px 30px 40px 40px;
 }
-.welcomeText{
-    font-size: 28px;
+.welcomeText {
+  font-size: 28px;
 }
-.welcomeText span{
-    color: #fcbf49;
+.welcomeText span {
+  color: #fcbf49;
 }
-.jobsAndRecruitment{
-    display: flex;
-    margin-top: 25px;
-    justify-content: space-between;
+.jobsAndRecruitment {
+  display: flex;
+  margin-top: 25px;
+  justify-content: space-between;
 }
-.assessmentAndJobs{
-    width: 65%;
+.assessmentAndJobs {
+  width: 65%;
 }
-.assessment{
-    background: #0e54d6;
-    color: #fff;
-    border-radius: 7px;
-    padding: 25px 35px;
-   
+.assessment {
+  background: #0e54d6;
+  color: #fff;
+  border-radius: 7px;
+  padding: 25px 35px;
 }
-.assessment div{
-    width: 60%;
+.assessment div {
+  width: 60%;
 }
-.assessment div h2{
-font-weight: 800;
-margin-bottom: 10px;
+.assessment div h2 {
+  font-weight: 800;
+  margin-bottom: 10px;
 }
-.assessment div p{
-    font-size: 14px;
-    line-height: 20px;
-    margin-bottom: 20px;
+.assessment div p {
+  font-size: 14px;
+  line-height: 20px;
+  margin-bottom: 20px;
 }
-.assessment div button{
-    all: unset;
-    background: #fff;
-    padding: 8px 12px;
-    color: #0e54d6;
-    border-radius: 4px;
-    font-size: 12px;
-    cursor: pointer;
+.assessment div button {
+  all: unset;
+  background: #fff;
+  padding: 8px 12px;
+  color: #0e54d6;
+  border-radius: 4px;
+  font-size: 12px;
+  cursor: pointer;
 }
-.recommendations{
-    font-size: 14px;
-    font-weight: 500;
-    margin-top: 30px;
-    color: #7c7c7c;
+.recommendations {
+  font-size: 14px;
+  font-weight: 500;
+  margin-top: 30px;
+  color: #7c7c7c;
 }
-.recruitment{
-    width: 30%;
+.recruitment {
+  width: 30%;
 }
 
-@media(max-width: 1040px){
-    .assessmentAndJobs{
-        width: 60%;
-    }
-    .recruitment{
-        width: 35%;
-    }
+@media (max-width: 1040px) {
+  .assessmentAndJobs {
+    width: 60%;
+  }
+  .recruitment {
+    width: 35%;
+  }
 }
-@media(max-width:700px){
-    .jobsAndRecruitment{
-        display: block;
-    }
-    .assessmentAndJobs{
-        width: 100%;
-    }
-    .recruitment{
-        width: 100%;
-        margin-top: 100px;
-    }
+@media (max-width: 700px) {
+  .jobsAndRecruitment {
+    display: block;
+  }
+  .assessmentAndJobs {
+    width: 100%;
+  }
+  .recruitment {
+    width: 100%;
+    margin-top: 100px;
+  }
 }
-@media(max-width:460px){
-    .assessment div{
-        width: 80%;
-    }
+@media (max-width: 460px) {
+  .assessment div {
+    width: 80%;
+  }
 }

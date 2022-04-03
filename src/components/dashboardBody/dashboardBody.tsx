@@ -1,19 +1,27 @@
-import React from "react";
+import React, { useEffect, useState } from "react";
 import { UserDataType } from "../../types";
+import { getCurrentUser } from "../../utils";
 import DashboardContent from "../dashboardContent/dashboardContent";
 import DashboardNav from "../dashboardNav/dashboardNav";
 import styles from "./DashboardBody.module.css";
 
-const data: any = localStorage.getItem("userData");
-const userData: UserDataType = JSON.parse(data);
 interface Props {
-    toggle:()=>void
+  toggle: () => void;
 }
-const DashboardBody:React.FC<Props> = ({toggle}) => {
+const DashboardBody: React.FC<Props> = ({ toggle }) => {
+  const [user, setUser] = useState<UserDataType>({
+    name: "",
+    title: "",
+    avatar: "",
+    email: "",
+  });
+  useEffect(() => {
+    setUser(getCurrentUser());
+  }, []);
   return (
     <div className={styles.bodyContainer}>
-      <DashboardNav userData={userData} toggle={toggle} />
-      <DashboardContent name={userData.name} />
+      <DashboardNav userData={user} toggle={toggle} />
+      <DashboardContent name={user?.name} />
     </div>
   );
 };

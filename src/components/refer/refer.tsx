@@ -2,10 +2,10 @@ import React from "react";
 import styles from "./Refer.module.css";
 import CampaignRoundedIcon from "@mui/icons-material/CampaignRounded";
 import ContentCopyOutlinedIcon from "@mui/icons-material/ContentCopyOutlined";
-import CopyToClipboard from 'react-copy-to-clipboard'
+import CopyToClipboard from "react-copy-to-clipboard";
 
 const Refer = () => {
-const value = "https://refer/win/borderlesshr.com/"
+  const value = "https://refer/win/borderlesshr.com/";
   return (
     <div className={styles.referContainer}>
       <div className={styles.iconAndTextBox}>
@@ -18,13 +18,8 @@ const value = "https://refer/win/borderlesshr.com/"
         Refer a friend and earn CA$250 when they get hired.
       </p>
       <div className={styles.inputContainer}>
-        <input
-          type="text"
-          id="link"
-          value={value}
-          readOnly
-        />
-        <CopyToClipboard text={value} onCopy={()=> alert("Link copied!")}>
+        <input type="text" id="link" value={value} readOnly />
+        <CopyToClipboard text={value} onCopy={() => alert("Link copied!")}>
           <ContentCopyOutlinedIcon className={styles.copyIcon} />
         </CopyToClipboard>
       </div>
