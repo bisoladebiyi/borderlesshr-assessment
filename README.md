@@ -4,11 +4,11 @@ Two webpage site(login and dasboard page) built with React, Typescript and CSS
 
 ## Live Link:
 
-Access the site at (https://borderless-assessment.netlify.app)
+Access the site at (https://borderlesshr-assessment.netlify.app)
 
 ## Screenshots
-![Login Page]("/src/images/login.png")
-![Dashboard Page]("/src/images/dashboard.png")
+![Login Page](/src/images/login.png)
+![Dashboard Page](/src/images/dashboard.png)
 
 ## Set Up
 
