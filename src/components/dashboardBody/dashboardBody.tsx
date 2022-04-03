@@ -21,7 +21,7 @@ const DashboardBody: React.FC<Props> = ({ toggle }) => {
   return (
     <div className={styles.bodyContainer}>
       <DashboardNav userData={user} toggle={toggle} />
-      <DashboardContent name={user?.name} />
+      <DashboardContent />
     </div>
   );
 };

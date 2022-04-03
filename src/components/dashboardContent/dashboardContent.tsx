@@ -5,11 +5,9 @@ import RecruitmentProcess from "../recruitmentProcess/recruitmentProcess";
 import Refer from "../refer/refer";
 import styles from "./DashboardContent.module.css";
 
-interface Props {
-  name: string;
-}
 
-const DashboardContent: React.FC<Props> = () => {
+
+const DashboardContent = () => {
   const [userName, setUserName] = useState<string>("");
   useEffect(() => {
     const nameArr = getCurrentUser()?.name.split(" ");

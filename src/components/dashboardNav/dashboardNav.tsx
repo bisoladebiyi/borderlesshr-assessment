@@ -1,5 +1,5 @@
 import { Avatar } from "@mui/material";
-import React, { useEffect, useState } from "react";
+import React from "react";
 import styles from "./DashboardNav.module.css";
 import SearchRoundedIcon from "@mui/icons-material/SearchRounded";
 import NotificationsRoundedIcon from "@mui/icons-material/NotificationsRounded";
